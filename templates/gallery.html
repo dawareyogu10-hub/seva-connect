@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | SevaConnect</title>
+
+
+    <!-- Bootstrap -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Our CSS -->
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+                     NAVBAR
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+
+    <div class="container">
+
+
+        <!-- LOGO -->
+
+        <a class="navbar-brand" href="/">
+
+            <span class="brand-icon">✦</span>
+
+            Seva<span>Connect</span>
+
+        </a>
+
+
+        <!-- MOBILE MENU -->
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+
+        <div
+            class="collapse navbar-collapse"
+            id="mainMenu">
+
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="/">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="/about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="/programs">
+
+                        Our Work
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="/events">
+
+                        Events
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link active"
+                       href="/gallery">
+
+                        Gallery
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="/volunteer">
+
+                        Volunteer
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="/contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item ms-lg-3">
+
+                    <a
+                        href="/donate"
+                        class="nav-donate">
+
+                        Donate
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+                  GALLERY HERO
+===================================================== -->
+
+<section class="gallery-header">
+
+    <div class="container text-center">
+
+
+        <div class="section-tag">
+
+            OUR MOMENTS
+
+        </div>
+
+
+        <h1>
+
+            Our Gallery
+
+        </h1>
+
+
+        <p>
+
+            A glimpse of the people, communities and
+            moments that inspire our work.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    GALLERY SECTION
+===================================================== -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+
+        <!-- INTRO -->
+
+        <div class="text-center mb-5">
+
+            <div class="section-tag">
+
+                SEVACONNECT IN ACTION
+
+            </div>
+
+
+            <h2 class="gallery-title">
+
+                Moments That Matter
+
+            </h2>
+
+
+            <p class="gallery-description">
+
+                Every photograph tells a story of hope,
+                kindness and community.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+                         IMAGE GRID
+        ================================================== -->
+
+        <div class="row g-4">
+
+
+            <!-- =================================================
+                            IMAGE 1
+            ================================================== -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+
+                    <img
+                        src="{{ url_for('static', filename='images/child.jpg') }}"
+                        alt="Children supported by SevaConnect">
+
+
+                    <div class="gallery-overlay">
+
+
+                        <span class="gallery-category">
+
+                            COMMUNITY
+
+                        </span>
+
+
+                        <h3>
+
+                            Spreading Smiles
+
+                        </h3>
+
+
+                        <p>
+
+                            Creating happier moments
+                            for children.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                            IMAGE 2
+            ================================================== -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+
+                    <img
+                        src="{{ url_for('static', filename='images/edu.jpg') }}"
+                        alt="Education initiative">
+
+
+                    <div class="gallery-overlay">
+
+
+                        <span class="gallery-category">
+
+                            EDUCATION
+
+                        </span>
+
+
+                        <h3>
+
+                            Education for All
+
+                        </h3>
+
+
+                        <p>
+
+                            Supporting learning and
+                            educational opportunities.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                            IMAGE 3
+            ================================================== -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+
+                    <img
+                        src="{{ url_for('static', filename='images/hero.jpg') }}"
+                        alt="SevaConnect community">
+
+
+                    <div class="gallery-overlay">
+
+
+                        <span class="gallery-category">
+
+                            OUR COMMUNITY
+
+                        </span>
+
+
+                        <h3>
+
+                            Together We Care
+
+                        </h3>
+
+
+                        <p>
+
+                            People coming together
+                            for positive change.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                            IMAGE 4
+            ================================================== -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="gallery-card gallery-large">
+
+
+                    <img
+                        src="{{ url_for('static', filename='images/ngo.jpg') }}"
+                        alt="NGO volunteers">
+
+
+                    <div class="gallery-overlay">
+
+
+                        <span class="gallery-category">
+
+                            VOLUNTEERS
+
+                        </span>
+
+
+                        <h3>
+
+                            United for Change
+
+                        </h3>
+
+
+                        <p>
+
+                            Every helping hand makes
+                            a meaningful difference.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                            IMAGE 5
+            ================================================== -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="gallery-card gallery-large">
+
+
+                    <img
+                        src="{{ url_for('static', filename='images/treeplant.jpg') }}"
+                        alt="Tree plantation initiative">
+
+
+                    <div class="gallery-overlay">
+
+
+                        <span class="gallery-category">
+
+                            ENVIRONMENT
+
+                        </span>
+
+
+                        <h3>
+
+                            Care for Our Planet
+
+                        </h3>
+
+
+                        <p>
+
+                            Building a greener and
+                            healthier future.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                     GALLERY CTA
+===================================================== -->
+
+<section class="gallery-cta">
+
+
+    <div class="container text-center">
+
+
+        <div class="section-tag">
+
+            BE PART OF THE CHANGE
+
+        </div>
+
+
+        <h2>
+
+            Your Story Could Be
+            Our Next Moment.
+
+        </h2>
+
+
+        <p>
+
+            Join SevaConnect and help us create
+            more meaningful moments.
+
+        </p>
+
+
+        <div class="gallery-buttons">
+
+
+            <a
+                href="/volunteer"
+                class="primary-btn">
+
+                🤝 Become a Volunteer
+
+            </a>
+
+
+            <a
+                href="/donate"
+                class="secondary-dark-btn">
+
+                ❤️ Support Our Work
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                       FOOTER
+===================================================== -->
+
+<footer class="premium-footer">
+
+
+    <div class="container">
+
+
+        <div class="row g-5">
+
+
+            <!-- ABOUT -->
+
+            <div class="col-lg-5">
+
+
+                <div class="footer-logo">
+
+                    ✦ SevaConnect
+
+                </div>
+
+
+                <p>
+
+                    Connecting people, resources and
+                    opportunities to create meaningful
+                    social change.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- EXPLORE -->
+
+            <div class="col-lg-2">
+
+
+                <h5>
+
+                    Explore
+
+                </h5>
+
+
+                <a href="/">
+
+                    Home
+
+                </a>
+
+
+                <a href="/about">
+
+                    About
+
+                </a>
+
+
+                <a href="/programs">
+
+                    Our Work
+
+                </a>
+
+
+                <a href="/gallery">
+
+                    Gallery
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- GET INVOLVED -->
+
+            <div class="col-lg-2">
+
+
+                <h5>
+
+                    Get Involved
+
+                </h5>
+
+
+                <a href="/donate">
+
+                    Donate
+
+                </a>
+
+
+                <a href="/volunteer">
+
+                    Volunteer
+
+                </a>
+
+
+                <a href="/events">
+
+                    Events
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-3">
+
+
+                <h5>
+
+                    Contact
+
+                </h5>
+
+
+                <p>
+
+                    📍 Nagpur, Maharashtra
+
+                </p>
+
+
+                <p>
+
+                    📧 info@sevaconnect.org
+
+                </p>
+
+
+                <p>
+
+                    📞 +91 98765 43210
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            © 2026 SevaConnect NGO.
+            All Rights Reserved.
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>
